@@ -30,7 +30,6 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
-  color: #313131;
 }
 
 
@@ -58,16 +57,13 @@
   font-weight: 600;
   font-size: 24px;
   line-height: 1.2;
-  color: #313131;
   margin-bottom: 6px;
 }
 .cart__subtitle {
   margin-bottom: 20px;
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 20px;
   line-height: 1.2;
-  color: #313131;
   opacity: 0.6;
 }
 

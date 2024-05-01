@@ -28,8 +28,8 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
   font-size: 20px;
-  line-height: 1.21;
-  color: #000;
+  line-height: 1.2;
+  color: #313131;
   background-color: #fff;
 }
 
@@ -54,6 +54,7 @@ button {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 ul {
@@ -98,6 +99,7 @@ fieldset {
   max-width: calc(var(--width) + var(--padding) * 2);
   margin: 0 auto;
   padding: 0 var(--padding);
+  /* background-color: red; */
 }
 
 @media (max-width: 1140px) {

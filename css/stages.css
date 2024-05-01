@@ -12,9 +12,7 @@
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 54px;
-  line-height: 1.2;
   text-transform: uppercase;
-  color: #313131;
 }
 .stages__name-subtitle {
   position: absolute;
@@ -24,8 +22,6 @@
   width: 280px;
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 20px;
-  line-height: 1.2;
   color: #3057a2;
 }
 .stages__items {
@@ -47,17 +43,11 @@
 
   font-family: var(--font-family);
   font-weight: 600;
-  font-size: 20px;
-  line-height: 1.2;
-  color: #313131;
   padding: 5px 12px;
 }
 .item__info {
   font-family: var(--font-family);
   font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  color: #313131;
 }
 .item__info_long {
   width: 55%;
