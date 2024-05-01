@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  padding: 124px;
+  padding-top: 124px;
   background-image: url(../img/fon.png);
   height: 700px;
 }
@@ -89,5 +89,32 @@
 @media (max-width: 675px) {
   .hero {
     background-image: url(../img/fon375.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 90px;
+    height: 774px;
+  }
+  .content {
+    width: 100%;
+  }
+  .content__headline {
+    font-size: 36px;
+  }
+  .content__info {
+    text-align: left;
+    margin-bottom: 32px;
+  }
+
+  .content__btns {
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 290px;
+  }
+  .btn {
+    width: 100%;
+    padding: 18px 20px;
+  }
+  .content::after {
+    content: "";
   }
 }
