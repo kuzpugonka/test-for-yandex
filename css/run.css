@@ -1,0 +1,30 @@
+.running-line {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 12px;
+  width: 2335px;
+  background: #f54932;
+  animation: run 20s infinite linear;
+}
+.running-line__text {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.running-line__circle {
+  width: 6px;
+  height: 6px;
+}
+@keyframes run {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

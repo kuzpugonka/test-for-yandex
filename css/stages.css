@@ -1,0 +1,84 @@
+.stages {
+  padding-top: 200px;
+}
+.stages__name {
+  position: relative;
+  margin-bottom: 54px;
+}
+.stages__name-title {
+  width: 66%;
+}
+.title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #313131;
+}
+.stages__name-subtitle {
+  position: absolute;
+  top: 72px;
+  left: 301px;
+
+  width: 280px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #3057a2;
+}
+.stages__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.stages__item {
+  display: flex;
+  background-image: url(../img/sepia.png);
+  padding: 20px;
+  gap: 16px;
+}
+.item__num {
+  border-radius: 60px;
+  width: 36px;
+  height: 36px;
+  background: #fff;
+
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #313131;
+  padding: 5px 12px;
+}
+.item__info {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #313131;
+}
+.item__info_long {
+  width: 55%;
+  position: relative;
+}
+.item__info_long::after {
+  content: url(../img/airbus.png);
+  position: absolute;
+  bottom: -28px;
+  right: calc(var(--padding) - 12px);
+  transform: translateX(100%);
+}
+.item3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.item7 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}

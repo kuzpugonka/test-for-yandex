@@ -1,0 +1,7 @@
+.logo {
+  position: absolute;
+  top: 26px;
+  left: var(--padding);
+  transform: translate(50%, 50%);
+  z-index: 2;
+}

@@ -1,0 +1,119 @@
+html {
+  position: relative;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+:root {
+  --font-family: "Golos Text", sans-serif;
+  --second-family: "Merriweather", sans-serif;
+  --third-family: "Montserrat", sans-serif;
+}
+body {
+  margin: 0;
+  position: relative;
+  overflow-x: hidden;
+  min-width: 375px;
+  height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  font-size: 20px;
+  line-height: 1.21;
+  color: #000;
+  background-color: #fff;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  max-height: 100%;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+figure,
+fieldset {
+  margin: 0;
+}
+
+iframe {
+  border: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+.container {
+  --width: 1222px;
+  --padding: 40px;
+  max-width: calc(var(--width) + var(--padding) * 2);
+  margin: 0 auto;
+  padding: 0 var(--padding);
+}
+
+@media (max-width: 1140px) {
+  .container {
+    --width: 880px;
+  }
+}
+
+@media (max-width: 940px) {
+  .container {
+    --width: 680px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    --padding: 15px;
+  }
+}
