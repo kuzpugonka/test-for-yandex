@@ -7,3 +7,12 @@
   width: 245px;
   height: 36px;
 }
+
+@media (max-width: 675px) {
+  .logo {
+    width: 213px;
+    height: 32px;
+    transform: translate(0%, 50%);
+    top: 18px;
+  }
+}
