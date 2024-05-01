@@ -15,7 +15,6 @@
   text-transform: uppercase;
   color: #fff;
 }
-
 .running-line__circle {
   width: 6px;
   height: 6px;
@@ -26,5 +25,15 @@
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 675px) {
+  .running-line {
+    padding: 10px 12px;
+    width: 1727px;
+  }
+  .running-line__text {
+    font-size: 16px;
   }
 }
