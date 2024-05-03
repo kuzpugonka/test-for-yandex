@@ -2,17 +2,17 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="widp=device-widp, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Тестовое</title>
     <link href="./index.css" rel="stylesheet" />
-    <script src="./js/script.js" defer></script>
+    <!-- <script src="./js/script.js" defer></script> -->
   </head>
   <body>
     <header class="header">
       <div class="container header__container">
         <svg
           class="logo"
-          widp="246"
+          width="246"
           height="36"
           viewBox="0 0 246 36"
           fill="none"
@@ -49,9 +49,9 @@
 
           <div class="content">
             <div class="content__headline">
-              <p class="content__headline_left">Превратите уездный город</p>
-              <p class="content__headline_center">в столицу</p>
-              <p class="content__headline_right">земного шара</p>
+              <p class="headline-left">Превратите уездный город</p>
+              <p class="headline-center">в столицу</p>
+              <p class="headline-right">земного шара</p>
             </div>
 
             <p class="content__info">
@@ -69,7 +69,8 @@
         </div>
       </section>
 
-      <section class="running-line">
+      <aside class="running-line">
+    
         <p class="running-line__text">
           Дело помощи утопающим — дело рук самих утопающих!
         </p>
@@ -103,27 +104,28 @@
         >
           <circle cx="3" cy="3" r="3" fill="white" />
         </svg>
-      </section>
+      </aside>
 
       <section class="info" id="info">
         <div class="container info__container">
+          <h2 class="visually-hidden">Поддержать турнир</h2>
           <div class="info__block">
             <p class="text">
-              Чтобы поддержать Международный васюкинский турнир посетите лекцию
+              Чтобы поддержать Международный васюкинский турнир <span class="text-down">посетите лекцию
               на тему:
-              <span class="text-red"> «Плодотворная дебютная идея»</span>
+              <span class="text-red"> «Плодотворная дебютная идея»</span></span>
             </p>
-            <img src="./img/turnir.png" alt="Турнир по шахматам" />
+            <img class="block-img" src="./img/turnir.png" alt="Турнир по шахматам" />
           </div>
 
           <div class="info__box">
             <img
-              class="info__box-img"
+              class="box-img"
               src="./img/flash.png"
               alt="Шахматист думает"
             />
 
-            <div class="box">
+            <div class="box-content">
               <p class="text">
                 и Сеанс
                 <span class="text-red">
@@ -140,7 +142,8 @@
                 <p class="table-head">Стоимость входных билетов:</p>
                 <p class="table-data">20 коп.</p>
                 <p class="table-head">Плата за игру:</p>
-                <p class="table-data">50 коп.</p>
+                <p class="table-data table-data_up"><span class="table-data-up">
+                  50 коп.</span></p>
                 <p class="table-head">Взнос на телеграммы:</p>
                 <p class="table-data table-data_duble">
                   100 руб.
@@ -164,9 +167,9 @@
                 </p>
               </div>
 
-              <a href="#">
+              <p class="text-blye">
                 По всем вопросам обращаться в администрацию к К. Михельсону
-              </a>
+              </p>
             </div>
           </div>
         </div>
@@ -282,7 +285,7 @@
           </div>
 
           <div class="members__carts">
-            <div class="members__carts_first-screen">
+            <div class="first-screen">
               <div class="members__cart cart">
                 <img
                   class="cart__img"
@@ -320,7 +323,7 @@
               </div>
             </div>
 
-            <div class="members__carts_second-screen visually-hidden">
+            <div class="second-screen visually-hidden">
               <div class="members__cart cart">
                 <img
                   class="cart__img"
@@ -361,7 +364,7 @@
         </div>
       </section>
 
-      <section class="running-line">
+      <aside class="running-line">
         <p class="running-line__text">
           Дело помощи утопающим — дело рук самих утопающих!
         </p>
@@ -395,7 +398,7 @@
         >
           <circle cx="3" cy="3" r="3" fill="white" />
         </svg>
-      </section>
+      </aside>
     </main>
 
     <footer class="footer">
