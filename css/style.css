@@ -102,20 +102,19 @@ fieldset {
   /* background-color: red; */
 }
 
-@media (max-width: 1140px) {
+/* @media (min-width: 1140px) {
   .container {
-    --width: 880px;
   }
 }
 
 @media (max-width: 940px) {
   .container {
-    --width: 680px;
   }
-}
+} */
 
-@media (max-width: 640px) {
+@media (max-width: 675px) {
   .container {
-    --padding: 15px;
+    --width: 335px;
+    --padding: 20px;
   }
 }
