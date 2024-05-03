@@ -91,6 +91,7 @@
     background-image: url(../img/fon375.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom;
     padding-top: 90px;
     height: 774px;
   }
