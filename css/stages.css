@@ -72,3 +72,130 @@
   grid-row-start: 3;
   grid-row-end: 4;
 }
+
+.item-switch {
+  display: none;
+}
+
+@media (max-width: 675px) {
+  .stages {
+    padding-top: 120px;
+  }
+  .stages__name {
+    position: static;
+    margin-bottom: 148px;
+  }
+  .stages__name-title {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  .title {
+    font-size: 36px;
+    line-height: 1.1;
+  }
+  .stages__name {
+    position: relative;
+  }
+  .stages__name-subtitle {
+    position: static;
+    font-size: 18px;
+    
+  }
+  .stages__name::after {
+    content: url(../img/airbus375.png);
+    position: absolute;
+    /* bottom: 0px; */
+    right: 0;
+    transform: translateY(100%);
+    animation-name: airbus;
+    animation-duration:  3s;
+    animation-timing-function:  cubic-bezier(0.49, 0.09, 0.16, 0.94);;
+    animation-iteration-count:  infinite;
+  }
+  @keyframes airbus {
+    0%{
+      transform: translateX(100%) rotate(-20deg)
+      scale(0.6);
+    }
+    50%{
+      transform: translateX(0) rotate(0)
+      scale(1);
+    }  
+    100%{
+      transform: translateX(-120%) rotate(20deg)
+      scale(0.8);
+    }   
+  }
+  .stages__items {
+    grid-template-columns: repeat(1, var(--width));
+    gap: 0;
+    height: 300px;
+  }
+  .stages__item {
+    padding-top: 62px;
+  }
+  .item__info {
+    font-size: 18px;
+  }
+  .item__info_long {
+    width: 100%;
+    position: static;
+  }
+  .item__info_long::after {
+    content: "";
+  }
+  .item {
+    /* display: none; */
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .item2 {
+    /* display: none; */
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    padding-top: 8px;
+    padding-bottom: 34px;
+  }
+  .item3 {
+    display: none;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .item4 {
+    display: none;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .item5 {
+    display: none;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    padding-top: 8px;
+    padding-bottom: 100px;
+  }
+  .item6 {
+    display: none;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .item7 {
+    display: none;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .item-switch {
+    display: flex;
+    justify-content: center;
+    padding-top: 28px;
+    gap: 16px;
+  }
+  .svg-left,
+.svg-right {
+  width: 36px;
+  height: 36px;
+}
+  .item-switch-boll {
+    display: flex;
+    gap: 6px;
+  }
+}
