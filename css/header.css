@@ -1,18 +1,20 @@
-.logo {
+.header {
   position: absolute;
   top: 26px;
-  left: var(--padding);
   z-index: 2;
-  transform: translate(50%, 50%);
+  left: var(--padding);
+}
+.header__logo {
   width: 245px;
   height: 36px;
 }
 
 @media (max-width: 675px) {
-  .logo {
+  .header {
+    top: 18px;
+  }
+  .header__logo {
     width: 213px;
     height: 32px;
-    transform: translate(0%, 50%);
-    top: 18px;
   }
 }
