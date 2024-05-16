@@ -14,11 +14,11 @@
 }
 .btn-left circle:hover,
 .btn-right circle:hover {
-  fill: #FBCE51;
+  fill: #fbce51;
 }
 .btn-left circle:disabled,
 .btn-right circle:disabled {
-  fill: #D6D6D6;
+  fill: #d6d6d6;
 }
 .svg-left,
 .svg-right {
@@ -35,21 +35,63 @@
 
 .members__carts {
   margin-bottom: 140px;
-}
-.members__carts_first-screen,
-.members__carts_second-screen {
+
   display: flex;
   gap: 20px;
+  flex-wrap: nowrap;
 }
-.members__cart {
-  width: 394px;
-  padding: 0 37px;
+
+/* .members__cart {} */
+@keyframes swi-pe {
+  0% {
+    transform: translateX(0%);
+  }
+  0% {
+    transform: translateX(100%);
+  }
+}
+.cart:nth-child(1) {
+  animation: swipe 4s infinite ease;
+
+  animation-delay: 4s;
+}
+.cart:nth-child(2) {
+  animation: swipe 4s infinite ease;
+
+  animation-delay: 8s;
+}
+.cart:nth-child(3) {
+  animation: swipe 4s infinite ease;
+
+  animation-delay: 12s;
+}
+.cart:nth-child(4) {
+  animation: swipe 4s infinite ease;
+
+  animation-delay: 16s;
+}
+.cart:nth-child(5) {
+  animation: swipe 4s infinite ease;
+
+  animation-delay: 20s;
+}
+.cart:nth-child(6) {
+  animation: swipe 4s infinite ease;
+
+  animation-delay: 24s;
+}
+
+.cart {
+  max-width: 394px;
+  min-width: 335px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .cart__img {
+  width: 320px;
+  height: 320px;
   margin-bottom: 28px;
 }
 .cart__title {
@@ -83,4 +125,27 @@
 .cart__btn:hover {
   background: #3057a2;
   color: #fff;
+}
+
+@media (max-width: 675px) {
+  .members {
+    padding-top: 120px;
+  }
+  .members__name {
+    margin-bottom: 40px;
+  }
+  .members__switch {
+    display: none;
+  }
+  .members__carts {
+    margin-bottom: 100px;
+    gap: 0;
+  }
+  /* .cart {
+    width: var(--width);
+  } */
+  .cart__img {
+    width: 244px;
+    height: 244px;
+  }
 }
