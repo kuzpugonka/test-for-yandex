@@ -1,11 +1,67 @@
 .hero {
   position: relative;
   padding-top: 124px;
-  background-image: url(../img/fon.png);
   height: 700px;
+  background-color: #E9DED4;
+  background-image: url('../img/abris.png'), url('../img/filter.png'), url('../img/city.png');
+  background-repeat: no-repeat;
+  background-position-y: center bottom;
+  background-position-x: center center;
+}
+.hero::before {
+  content: url('../img/sun.png');
+  position: absolute;
+  top: -44px;
+  animation: text 8s linear  infinite;
+}
+@keyframes text {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.hero::after {
+  content: url('../img/chess-left.png') url('../img/chess-right.png');
+  position: absolute;
+  top: 165px;
+  left: 1007px;
+  right: 435px;
+  z-index: 2;
+  animation: chess 4s linear 1s infinite;
+}
+@keyframes chess {
+  0% {
+    transform: translateY(30%) scale(0.7);    
+  }
+  50% {
+    transform: translateY(0%) scale(1) ;    
+  }
+  60% {
+    transform: rotate(45deg);
+  }
+  70% {
+    transform: rotate(-45deg);
+  }
+  80% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: translateY(30%) scale(0.7);
+  }
 }
 .content {
   width: 542px;
+}
+.content::after {
+  content: url(../img/peshka.svg);
+  position: absolute;
+  transform: translate(-100%, 0%);
+  right: 53px;
+  bottom: 20px;
+  width: 82px;
+  height: 122px;
 }
 .content__headline {
   font-family: var(--second-family);
@@ -15,14 +71,12 @@
   text-transform: uppercase;
   margin-bottom: 24px;
 }
-
 .headline-center {
   text-align: center;
 }
 .headline-right {
   text-align: right;
 }
-
 .content__info {
   font-family: var(--font-family);
   font-weight: 400;
@@ -36,7 +90,6 @@
   gap: 16px;
   margin-bottom: 130px;
 }
-
 .btn {
   font-family: var(--font-family);
   font-weight: 500;
@@ -52,7 +105,6 @@
 .btn_dark {
   text-align: center;
   color: #fff;
-
   background: #1f1f1f;
 }
 .btn_dark:hover {
@@ -62,7 +114,6 @@
 .btn_light {
   text-align: center;
   color: #1f1f1f;
-
   border-color: #1f1f1f;
   background: transparent;
 }
@@ -71,21 +122,13 @@
   color: #fff;
 }
 
-.content::after {
-  content: url(../img/peshka.svg);
-  position: absolute;
-  transform: translate(-100%, 0%);
-  right: 53px;
-  bottom: 20px;
-  width: 82px;
-  height: 122px;
-}
 
 @media (min-width: 1440px) {
   .hero {
     background-image: url(../img/fon1920.png);
   }
 }
+
 @media (max-width: 675px) {
   .hero {
     background-image: url(../img/fon375.png);
@@ -105,7 +148,6 @@
     text-align: left;
     margin-bottom: 32px;
   }
-
   .content__btns {
     flex-direction: column;
     gap: 14px;
