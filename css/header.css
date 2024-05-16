@@ -2,7 +2,8 @@
   position: absolute;
   top: 26px;
   z-index: 2;
-  left: var(--padding);
+  left: 0;
+  right: 0;
 }
 .header__logo {
   width: 245px;
